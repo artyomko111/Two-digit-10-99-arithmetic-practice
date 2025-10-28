@@ -1,4 +1,4 @@
-# Two-Digit Arithmetic Practice
+# Two-Digit Arithmetic Practice(Use Chrome Browser Only)
 A web application designed to help users practice two-digit arithmetic (10–99). It randomly generates addition, subtraction, multiplication, and division problems while ensuring valid results. The app also provides visual feedback with interactive CSS elements for a fun and engaging learning experience.
 ## Features
 - Randomly generates arithmetic problems:
