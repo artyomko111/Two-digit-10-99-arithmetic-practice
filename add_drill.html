@@ -1,0 +1,51 @@
+<html>
+<title> ADD Drill</title>
+<script>
+//Math.floor(Math.random() *10)
+var n1, n2, score=0,cnt=0,error='';//global variable
+function genquest(){
+ cnt++;
+ n1=Math.floor(Math.random()*10);//0<=random()<1
+ n2=Math.floor(Math.random()*10);//0<= ~   <=9
+ document.getElementById('no').innerHTML="第"+cnt+"題:";
+ document.getElementById('quest').innerHTML="<font color=red size=6>"+n1+"+"+n2+"</font>";
+}
+function check(){
+var uans=document.getElementById('reply').value;
+var msg='';
+//alert(uans);
+//cnt++;
+if (uans==n1+n2) {
+  score+=10;
+  msg="Correct!<img src=o.gif width=60 height=60>";
+ }
+else {
+  msg="InCorrect!<img src= x.jpg width=60 height=60>";
+  error=error+n1+"+"+n2+"=?<br>";
+}
+msg=msg+"score:"+score;
+document.getElementById('fb').innerHTML="<font color=blue size=5>"+msg+"</font>";
+}
+function showerror() {
+var needdrill="items:"+cnt+"<br><font color=red size=5>"+error+"</font>";
+document.getElementById('wrongarea').innerHTML=needdrill;
+}
+</script>
+<body onload='genquest();'>
+ADD Drill <hr> 
+<p id=no> </p>
+<span id=quest>5+6</span>=<input type=text size=2 id=reply style="font-size: .3in; font-weight: bold">
+<button onclick='check();' style="font-size: .25in; color: #FF00FF">check</button>
+<button onclick='genquest();' style="font-size: .25in; color: #FF00FF">next</button>
+<br><hr>
+<p id=fb></p>
+<hr>
+<button onclick='showerror();' style="font-size: .25in; color: #FF00FF">show wrong reply</button><br>
+<p id='wrongarea'></p>
+
+
+
+
+
+</body>
+</html>
