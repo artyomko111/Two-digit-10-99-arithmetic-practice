@@ -11,7 +11,7 @@ A web application designed to help users practice two-digit arithmetic (10–99)
 1. Open 'add_drill.html' in your browser.
 2. Solve the arithmetic problems generated and click `check`.
 3. Visual feedback will indicate correct or incorrect answers.
-4. Refresh the page or click 'Next' to get a new problem.
+4. Refresh the page or click `Next` to get a new problem.
 ## Technologies
 - HTML
 - CSS
